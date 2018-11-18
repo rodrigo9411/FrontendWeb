@@ -17,6 +17,16 @@ export default class Index extends Component {
             console.log(error);
           })
       }
+
+      componentDidUpdate(prevProps) {
+        axios.get('http://localhost:4000/api/pokemon')
+          .then(response => {
+            this.setState({ pokemon: response.data });
+          })
+          .catch(function (error) {
+            console.log(error);
+          })
+      }
       tabRow(){
         return this.state.pokemon.map(function(object, i){
             return <TableRow obj={object} key={i} />;

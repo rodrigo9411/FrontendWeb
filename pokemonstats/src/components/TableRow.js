@@ -12,7 +12,7 @@ class TableRow extends Component {
         axios.delete('http://localhost:4000/api/pokemon/'+this.props.obj.number)
             .then(console.log('Deleted'))
             .catch(err => console.log(err))
-            
+        window.location.reload();
     }
 
   render() {
