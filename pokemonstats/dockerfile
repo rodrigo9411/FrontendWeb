@@ -1,4 +1,4 @@
-# First get latest node docker and copy the project.
+# build environment
 FROM node:latest as node
 WORKDIR /app
 COPY . .
