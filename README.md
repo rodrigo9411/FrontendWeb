@@ -25,5 +25,8 @@ Frontend
 - Se deben correr las imágenes en aws y correr el proyecto desde las mismas
 
 ### Lab 10
-Entrega final 
+- Se subio la imagen a ECR de amazon.
+- Se creó un cluster con 1 instancia de ec2 el cual contiene la imagen del frontend y con el puerto 80 expuesto
+- El frontend está configurado para utilizar la URL de el backend ya subido en amazon.
+- Se utiliza un load balancer para que al momento de caer una instancia, pueda levantarse otra inmediatamente y así ofrecer continuidad.
 
